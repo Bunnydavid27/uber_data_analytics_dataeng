@@ -1,0 +1,41 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - uber_data_transformer
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: uber_data
+  status: executed
+  type: data_loader
+  upstream_blocks: []
+  uuid: uber_data
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: uber_data_transformer
+  status: executed
+  type: transformer
+  upstream_blocks:
+  - uber_data
+  uuid: uber_data_transformer
+callbacks: []
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: bitter moon
+type: python
+updated_at: '2023-05-26 07:05:18'
+uuid: bitter_moon
+widgets: []
